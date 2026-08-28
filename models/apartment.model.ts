@@ -2,10 +2,12 @@ import mongoose, { Schema, Model } from "mongoose";
 
 export interface IApartment {
   investment: string;
+  streetName: string;
   apartmentNumber: string;
   area: number;
   numberOfRooms: number;
   priceOfApartment: number;
+  pricePerMeterSquare: number;
   status: "available" | "reserved" | "sold";
 }
 
@@ -15,6 +17,10 @@ const apartmentSchema = new Schema<IApartment>(
       type: String,
       required: true,
       trim: true,
+    },
+    streetName: {
+      type: String,
+      required: true,
     },
 
     apartmentNumber: {
@@ -32,12 +38,14 @@ const apartmentSchema = new Schema<IApartment>(
       type: Number,
       required: true,
     },
-
     priceOfApartment: {
       type: Number,
       required: true,
     },
-
+    pricePerMeterSquare: {
+      type: Number,
+      required: true,
+    },
     status: {
       type: String,
       enum: ["available", "reserved", "sold"],
