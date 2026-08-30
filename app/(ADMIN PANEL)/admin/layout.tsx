@@ -1,4 +1,4 @@
-import AdminSidebar from "@/components/admin/AdminSidebar";
+import AdminSidebar from "@/components/admin/admin-sidebar/AdminSidebar";
 import React from "react";
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
