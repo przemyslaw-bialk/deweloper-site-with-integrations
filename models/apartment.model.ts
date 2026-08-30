@@ -22,13 +22,11 @@ const apartmentSchema = new Schema<IApartment>(
       type: String,
       required: true,
     },
-
     apartmentNumber: {
       type: String,
       required: true,
       trim: true,
     },
-
     area: {
       type: Number,
       required: true,

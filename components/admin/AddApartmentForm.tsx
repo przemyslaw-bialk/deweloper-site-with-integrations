@@ -1,6 +1,8 @@
+import { createApartmentAction } from "@/actions/apratment";
+
 const AddApartmentForm = () => {
   return (
-    <form>
+    <form action={createApartmentAction}>
       <div className="flex flex-col gap-1">
         <label htmlFor="investment">Nazwa inwestycji</label>
         <input
