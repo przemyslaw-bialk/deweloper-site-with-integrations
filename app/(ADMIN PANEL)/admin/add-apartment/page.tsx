@@ -1,4 +1,4 @@
-import AddApartmentForm from "@/components/admin/AddApartmentForm";
+import AddApartmentForm from "@/components/(ADMIN)/apartment-form/AddApartmentForm";
 
 const AddApartmentPage = () => {
   return (

@@ -1,4 +1,6 @@
 import { createApartmentAction } from "@/actions/apratment";
+import ApartmentFormHeader from "./ApartmentFormHeader";
+import ApartmentFormButtons from "./ApartmentFormButtons";
 
 const AddApartmentForm = () => {
   return (
@@ -6,20 +8,7 @@ const AddApartmentForm = () => {
       action={createApartmentAction}
       className="mx-auto w-full max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm md:p-8"
     >
-      {/* Header */}
-      <div className="mb-8 border-b border-border pb-6">
-        <p className="mb-2 text-sm font-medium uppercase tracking-wider text-accent">
-          Panel administracyjny
-        </p>
-
-        <h1 className="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-          Dodaj mieszkanie
-        </h1>
-
-        <p className="mt-2 text-sm text-muted">
-          Uzupełnij dane lokalu, aby dodać go do oferty inwestycji.
-        </p>
-      </div>
+      <ApartmentFormHeader />
 
       {/* Form */}
       <div className="grid grid-cols-1 gap-x-6 gap-y-5 md:grid-cols-2">
@@ -200,23 +189,7 @@ const AddApartmentForm = () => {
           </select>
         </div>
       </div>
-
-      {/* Actions */}
-      <div className="mt-8 flex flex-col-reverse gap-3 border-t border-border pt-6 sm:flex-row sm:justify-end">
-        <button
-          type="reset"
-          className="h-11 rounded-lg border border-border px-5 text-sm font-medium text-foreground transition hover:bg-secondary"
-        >
-          Wyczyść
-        </button>
-
-        <button
-          type="submit"
-          className="h-11 rounded-lg bg-primary px-6 text-sm font-medium text-white transition hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-accent/30"
-        >
-          Dodaj mieszkanie
-        </button>
-      </div>
+      <ApartmentFormButtons />
     </form>
   );
 };
