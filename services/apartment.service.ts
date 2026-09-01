@@ -59,3 +59,9 @@ export async function updateApartment(id: string, data: Partial<IApartment>) {
     _id: apartment._id.toString(),
   };
 }
+
+export async function deleteApartment(id: string) {
+  await dbConnect();
+
+  return Apartment.findByIdAndDelete(id);
+}

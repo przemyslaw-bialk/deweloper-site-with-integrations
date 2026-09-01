@@ -1,4 +1,5 @@
-import EditApartment from "@/components/(ADMIN)/edit-apartment/EditApartment";
+import DeleteApartment from "@/components/(ADMIN)/apartment-form/DeleteApartment";
+import EditApartmentForm from "@/components/(ADMIN)/apartment-form/EditApartmentForm";
 import { getAllApartments } from "@/services/apartment.service";
 
 const ApartmentsPage = async () => {
@@ -14,8 +15,8 @@ const ApartmentsPage = async () => {
             <p>{apartment.streetName}</p>
             <p>{apartment.apartmentNumber}</p>
           </div>
-
-          <EditApartment apartment={apartment} />
+          <EditApartmentForm apartment={apartment} />
+          <DeleteApartment id={apartment._id} />
         </div>
       ))}
     </div>

@@ -1,6 +1,10 @@
 "use server";
 
-import { createApartment, updateApartment } from "@/services/apartment.service";
+import {
+  createApartment,
+  deleteApartment,
+  updateApartment,
+} from "@/services/apartment.service";
 import { IApartment } from "@/models/apartment.model";
 import { revalidatePath } from "next/cache";
 
@@ -36,6 +40,12 @@ export async function updateApartmentAction(id: string, formData: FormData) {
     pricePerMeterSquare: Number(formData.get("pricePerMeterSquare")),
     status: formData.get("status") as IApartment["status"],
   });
+
+  revalidatePath("/admin/apartments");
+}
+
+export async function deleteApartmentAction(id: string) {
+  await deleteApartment(id);
 
   revalidatePath("/admin/apartments");
 }

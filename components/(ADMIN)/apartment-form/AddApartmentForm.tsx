@@ -1,4 +1,4 @@
-import { createApartmentAction } from "@/actions/apratment";
+import { createApartmentAction } from "@/actions/apartment";
 import ApartmentFormHeader from "./ApartmentFormHeader";
 import ApartmentFormButtons from "./ApartmentFormButtons";
 

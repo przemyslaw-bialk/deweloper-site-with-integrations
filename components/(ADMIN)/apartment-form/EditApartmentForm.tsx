@@ -1,7 +1,8 @@
 "use client";
 
-import { updateApartmentAction } from "@/actions/apratment";
+import { updateApartmentAction } from "@/actions/apartment";
 import { useState } from "react";
+import EditApartmentButton from "./EditApartmentButton";
 
 type Apartment = {
   _id: string;
@@ -19,19 +20,11 @@ type Props = {
   apartment: Apartment;
 };
 
-const EditApartment = ({ apartment }: Props) => {
+const EditApartmentForm = ({ apartment }: Props) => {
   const [isEditing, setIsEditing] = useState(false);
 
   if (!isEditing) {
-    return (
-      <button
-        type="button"
-        onClick={() => setIsEditing(true)}
-        className="rounded-lg border px-3 py-1 text-sm"
-      >
-        Edytuj
-      </button>
-    );
+    return <EditApartmentButton setIsEditing={setIsEditing} />;
   }
 
   return (
@@ -75,4 +68,4 @@ const EditApartment = ({ apartment }: Props) => {
   );
 };
 
-export default EditApartment;
+export default EditApartmentForm;
