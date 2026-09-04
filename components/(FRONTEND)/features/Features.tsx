@@ -3,6 +3,7 @@ import { BiCheckShield } from "react-icons/bi";
 import { CgIfDesign } from "react-icons/cg";
 import { IoKeyOutline } from "react-icons/io5";
 import type { IconType } from "react-icons";
+import SubtittleAccent from "@/ui/SubtittleAccent";
 
 type Feature = {
   icon: IconType;
@@ -43,9 +44,7 @@ const Features = () => {
             <div key={feature.title} className="flex items-start gap-4">
               <Icon className="text-3xl text-accent" />
               <div>
-                <p className="text-xs uppercase tracking-widest text-accent">
-                  {feature.title}
-                </p>
+                <SubtittleAccent>{feature.title}</SubtittleAccent>
                 <p className="mt-1 text-sm tracking-wider text-muted">
                   {feature.description}
                 </p>

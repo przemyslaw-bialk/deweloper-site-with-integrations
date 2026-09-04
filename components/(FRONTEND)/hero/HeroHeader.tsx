@@ -1,6 +1,6 @@
 const HeroHeader = () => {
   return (
-    <h1 className="text-5xl font-bold text-white leading-16 mt-2">
+    <h1 className="text-7xl font-bold font-heading  mt-2">
       Tworzymy <br />
       przestrzenie <br />
       do życia
