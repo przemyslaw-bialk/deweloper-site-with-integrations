@@ -2,30 +2,32 @@
 
 :root {
   /* Backgrounds */
-  --background: #f8f7f4;
-  --foreground: #1c1c1a;
+  --background: #0c0d0d;
+  --background-secondary: #121213;
+  --foreground: #f2f0eb;
 
   /* Brand */
-  --primary: #2f3a35;
-  --primary-light: #46544d;
-  --primary-dark: #202923;
+  --primary: #d8ddd8;
+  --primary-light: #e6e9e5;
+  --primary-dark: #b9c0b9;
 
   /* Accent */
-  --accent: #b89b6a;
-  --accent-light: #d2bd98;
-  --accent-dark: #967b50;
+  --accent: #d9b477;
+  --accent-light: #e5c58f;
+  --accent-dark: #a88b5b;
 
   /* Neutral */
-  --secondary: #ebe7df;
-  --muted: #706f69;
+  --secondary: #262a27;
+  --muted: #a6aaa5;
 
   /* UI */
-  --border: #ddd9d0;
-  --card: #ffffff;
+  --border: #3a3e3a;
+  --card: #202320;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
   --color-foreground: var(--foreground);
 
   --color-primary: var(--primary);
@@ -44,27 +46,6 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #181a18;
-    --foreground: #f2f0eb;
-
-    --primary: #d8ddd8;
-    --primary-light: #e6e9e5;
-    --primary-dark: #b9c0b9;
-
-    --accent: #d9b477;
-    --accent-light: #e5c58f;
-    --accent-dark: #a88b5b;
-
-    --secondary: #262a27;
-    --muted: #a6aaa5;
-
-    --border: #3a3e3a;
-    --card: #202320;
-  }
 }
 
 body {
