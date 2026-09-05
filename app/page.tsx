@@ -1,3 +1,4 @@
+import ContactSection from "@/components/(FRONTEND)/contact-section/ContactSection";
 import Features from "@/components/(FRONTEND)/features/Features";
 import Hero from "@/components/(FRONTEND)/hero/Hero";
 import OurOffer from "@/components/(FRONTEND)/our-offer/OurOffer";
@@ -14,7 +15,7 @@ export default function Home() {
         <Hero />
       </div>
       <Features />
-
+      <ContactSection />
       <OurOffer />
       <WhyUs />
     </>
