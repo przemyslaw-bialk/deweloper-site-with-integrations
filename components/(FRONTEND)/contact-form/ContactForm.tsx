@@ -1,16 +1,23 @@
 "use client";
-import { FieldValues, useForm } from "react-hook-form";
-
+import { sendContactEmailAction } from "@/actions/contact";
+import { useForm } from "react-hook-form";
+type ContactFormData = {
+  name: string;
+  email: string;
+  phoneNumber?: string;
+  subject: string;
+  message: string;
+};
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
-  } = useForm();
+  } = useForm<ContactFormData>();
 
-  const onSubmit = async (data: FieldValues) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+  const onSubmit = async (data: ContactFormData) => {
+    await sendContactEmailAction(data);
     console.log(data);
   };
 
