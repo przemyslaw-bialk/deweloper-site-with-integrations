@@ -9,10 +9,7 @@ const AddApartmentForm = () => {
       className="mx-auto w-full max-w-4xl rounded-2xl border border-border bg-card p-6 shadow-sm md:p-8"
     >
       <ApartmentFormHeader />
-
-      {/* Form */}
       <div className="grid grid-cols-1 gap-x-6 gap-y-5 md:grid-cols-2">
-        {/* Investment */}
         <div className="flex flex-col gap-2 md:col-span-2">
           <label
             htmlFor="investment"
@@ -31,7 +28,6 @@ const AddApartmentForm = () => {
           />
         </div>
 
-        {/* Street */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="streetName"
@@ -49,8 +45,6 @@ const AddApartmentForm = () => {
             className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/20"
           />
         </div>
-
-        {/* Apartment number */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="apartmentNumber"
@@ -68,8 +62,6 @@ const AddApartmentForm = () => {
             className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/20"
           />
         </div>
-
-        {/* Area */}
         <div className="flex flex-col gap-2">
           <label htmlFor="area" className="text-sm font-medium text-foreground">
             Powierzchnia
@@ -92,8 +84,6 @@ const AddApartmentForm = () => {
             </span>
           </div>
         </div>
-
-        {/* Rooms */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="numberOfRooms"
@@ -101,7 +91,6 @@ const AddApartmentForm = () => {
           >
             Liczba pokoi
           </label>
-
           <input
             id="numberOfRooms"
             name="numberOfRooms"
@@ -112,8 +101,6 @@ const AddApartmentForm = () => {
             className="h-11 rounded-lg border border-border bg-background px-3 text-sm text-foreground outline-none transition placeholder:text-muted focus:border-accent focus:ring-2 focus:ring-accent/20"
           />
         </div>
-
-        {/* Price */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="priceOfApartment"
@@ -139,8 +126,6 @@ const AddApartmentForm = () => {
             </span>
           </div>
         </div>
-
-        {/* Price per meter */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="pricePerMeterSquare"
@@ -148,7 +133,6 @@ const AddApartmentForm = () => {
           >
             Cena za m²
           </label>
-
           <div className="relative">
             <input
               id="pricePerMeterSquare"
@@ -166,8 +150,6 @@ const AddApartmentForm = () => {
             </span>
           </div>
         </div>
-
-        {/* Status */}
         <div className="flex flex-col gap-2">
           <label
             htmlFor="status"
