@@ -15,9 +15,10 @@ export default function Home() {
         <Hero />
       </div>
       <Features />
-      <ContactSection />
+
       <OurOffer />
       <WhyUs />
+      <ContactSection />
     </>
   );
 }
