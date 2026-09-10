@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ApartmentLayout = () => {
+const ApartmentGroundFloorSketch = () => {
   return (
     <div className="md:flex-1/2">
       <Image
@@ -13,4 +13,4 @@ const ApartmentLayout = () => {
   );
 };
 
-export default ApartmentLayout;
+export default ApartmentGroundFloorSketch;

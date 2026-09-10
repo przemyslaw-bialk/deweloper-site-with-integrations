@@ -1,5 +1,6 @@
 import ApartmentDescription from "@/components/(FRONTEND)/apartment/ApartmentDescription";
-import ApartmentLayout from "@/components/(FRONTEND)/apartment/ApartmentLayout";
+import ApartmentGroundFloorSketch from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorSketch";
+import ApartmentRoomList from "@/components/(FRONTEND)/apartment/ApartmentRoomList";
 import SectionWrapper from "@/ui/SectionWrapper";
 
 const ApartmentPage = () => {
@@ -7,8 +8,9 @@ const ApartmentPage = () => {
     <SectionWrapper className="pt-26">
       <div className="flex items-start justify-between md:flex-row flex-col">
         <ApartmentDescription />
-        <ApartmentLayout />
+        <ApartmentGroundFloorSketch />
       </div>
+      <ApartmentRoomList />
     </SectionWrapper>
   );
 };
