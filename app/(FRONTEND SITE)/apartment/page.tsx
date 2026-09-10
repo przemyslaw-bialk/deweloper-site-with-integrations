@@ -1,7 +1,7 @@
 import ApartmentDescription from "@/components/(FRONTEND)/apartment/ApartmentDescription";
 import ApartmentGroundFloorSketch from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorSketch";
-import ApartmentRoomList from "@/components/(FRONTEND)/apartment/ApartmentRoomList";
 import SectionWrapper from "@/ui/SectionWrapper";
+import ApartmentGroundFloorTable from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorTable";
 
 const ApartmentPage = () => {
   return (
@@ -10,7 +10,7 @@ const ApartmentPage = () => {
         <ApartmentDescription />
         <ApartmentGroundFloorSketch />
       </div>
-      <ApartmentRoomList />
+      <ApartmentGroundFloorTable />
     </SectionWrapper>
   );
 };
