@@ -4,6 +4,7 @@ import { CgIfDesign } from "react-icons/cg";
 import { IoKeyOutline } from "react-icons/io5";
 import type { IconType } from "react-icons";
 import SubtittleAccent from "@/ui/SubtittleAccent";
+import SectionWrapper from "@/ui/SectionWrapper";
 
 type Feature = {
   icon: IconType;
@@ -36,12 +37,12 @@ const FeaturesArray: Feature[] = [
 
 const Features = () => {
   return (
-    <div className="bg-background-secondary">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-12 px-6 py-6 md:grid-cols-4">
+    <div className="bg-background py-12">
+      <SectionWrapper className=" grid grid-cols-2 gap-12 md:grid-cols-4">
         {FeaturesArray.map((feature) => {
           const Icon = feature.icon;
           return (
-            <div key={feature.title} className="flex items-start gap-4">
+            <div key={feature.title} className="flex items-start  gap-4">
               <Icon className="text-3xl text-accent" />
               <div>
                 <SubtittleAccent>{feature.title}</SubtittleAccent>
@@ -52,7 +53,7 @@ const Features = () => {
             </div>
           );
         })}
-      </div>
+      </SectionWrapper>
     </div>
   );
 };

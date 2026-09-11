@@ -11,7 +11,7 @@ const ButtonSecondary = ({ children, href, className = "" }: Props) => {
   return (
     <Link
       href={href}
-      className={`group mt-10 inline-flex w-fit items-center gap-10 border border-accent px-6 py-2 text-sm text-accent ${className}`}
+      className={`group inline-flex w-fit items-center gap-10 border border-accent px-6 py-2 text-sm text-accent ${className}`}
     >
       <span className="text-sm tracking-wider">{children}</span>
 

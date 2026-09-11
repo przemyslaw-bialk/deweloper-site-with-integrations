@@ -7,9 +7,9 @@ import Counter from "./Counter";
 
 const WhyUs = () => {
   return (
-    <SectionWrapper backgroundColor="bg-background-secondary">
-      <div className="flex items-center gap-6 py-6">
-        <div className="w-1/3">
+    <SectionWrapper backgroundColor="bg-background" className="py-12">
+      <div className="flex flex-col md:flex-row items-center justify-between py-6 gap-6">
+        <div>
           <SubtittleAccent>dlaczego my?</SubtittleAccent>
 
           <MainTitle>Zaufaj doświadczeniu</MainTitle>
@@ -19,27 +19,26 @@ const WhyUs = () => {
             klientów i zrealizowane inwestycje to nasza najlepsza wizytówka.
           </SectionText>
 
-          <ButtonSecondary href="/about">O nas</ButtonSecondary>
+          <ButtonSecondary href="/about" className="mt-10">
+            O nas
+          </ButtonSecondary>
         </div>
+        <div className="flex gap-2 md:gap-12 items-center ">
+          <Counter value={10} suffix="+">
+            Lat doświadczenia
+          </Counter>
 
-        <div className="flex flex-1 justify-end">
-          <div className="grid grid-cols-4 gap-8">
-            <Counter value={10} suffix="+">
-              Lat doświadczenia
-            </Counter>
+          <Counter value={99} suffix="+">
+            Zadowolonych klientów
+          </Counter>
 
-            <Counter value={250} suffix="+">
-              Zadowolonych klientów
-            </Counter>
+          <Counter value={200} suffix="+">
+            Zrealizowanych mieszkań
+          </Counter>
 
-            <Counter value={500} suffix="+">
-              Zrealizowanych mieszkań
-            </Counter>
-
-            <Counter value={100} suffix="%">
-              Gwarancji jakości
-            </Counter>
-          </div>
+          <Counter value={100} suffix="%">
+            Gwarancji jakości
+          </Counter>
         </div>
       </div>
     </SectionWrapper>

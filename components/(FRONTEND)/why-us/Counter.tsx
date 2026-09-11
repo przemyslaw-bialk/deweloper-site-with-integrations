@@ -16,12 +16,14 @@ const Counter = ({ value, suffix = "", children }: Props) => {
   });
 
   return (
-    <div ref={ref}>
-      <div className="text-3xl font-bold text-accent">
-        {inView && <CountUp end={value} duration={2} />}
-        {suffix}
+    <div ref={ref} className="flex flex-col items-center text-center ">
+      <div className="text-3xl font-bold text-accent ">
+        <div>
+          {inView && <CountUp end={value} duration={2} />}
+          {suffix}
+        </div>
       </div>
-      <p className="mt-2 text-sm text-muted tracking-wide">{children}</p>
+      <p className="mt-2 text-sm text-muted tracking-wide ">{children}</p>
     </div>
   );
 };

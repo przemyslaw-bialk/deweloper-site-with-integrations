@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ButtonMain from "@/ui/ButtonMain";
 import MainTitle from "@/ui/MainTittle";
+import SectionWrapper from "@/ui/SectionWrapper";
 
 const ContactSection = () => {
   return (
@@ -12,20 +13,18 @@ const ContactSection = () => {
         className="object-cover object-center"
       />
       <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/60 to-black/20" />
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-4 py-5 md:flex-row">
+      <SectionWrapper className="relative py-10 flex flex-col md:flex-row justify-between">
         <div>
-          <MainTitle className="px-6">
-            Porozmawiajmy o Twoim nowym mieszkaniu
-          </MainTitle>
-
-          <p className="mt-2 px-6 text-sm tracking-wide">
+          <MainTitle>Porozmawiajmy o Twoim nowym mieszkaniu</MainTitle>
+          <p className="mt-2 text-sm tracking-wide">
             Skontaktuj się z nami i dowiedz się więcej o aktualnej ofercie.
           </p>
         </div>
-        <ButtonMain href="/contact" className="md:mr-6">
+
+        <ButtonMain href="/contact" className="mt-6 w-fit">
           Skontaktuj się
         </ButtonMain>
-      </div>
+      </SectionWrapper>
     </div>
   );
 };
