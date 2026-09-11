@@ -1,9 +1,11 @@
 import ApartmentDescription from "@/components/(FRONTEND)/apartment/ApartmentDescription";
-import ApartmentGroundFloorSketch from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorSketch";
+import ApartmentGroundFloorSketch from "@/components/(FRONTEND)/apartment/ground-floor/ApartmentGroundFloorSketch";
 import SectionWrapper from "@/ui/SectionWrapper";
-import ApartmentGroundFloorTable from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorTable";
-import ApartmentGroundFloorDescription from "@/components/(FRONTEND)/apartment/ApartmentGroundFloorDescription";
+import ApartmentGroundFloorTable from "@/components/(FRONTEND)/apartment/ground-floor/ApartmentGroundFloorTable";
+import ApartmentGroundFloorDescription from "@/components/(FRONTEND)/apartment/ground-floor/ApartmentGroundFloorDescription";
 import ApartmentBackgroundSection from "@/components/(FRONTEND)/apartment/ApartmentBackgroundSection";
+import ApartmentUpperFloorTable from "@/components/(FRONTEND)/apartment/upper-floor/ApartmentUpperFloorTable";
+import ApartmentUpperFloorSketch from "@/components/(FRONTEND)/apartment/upper-floor/ApartmentUpperFloorSketch";
 
 const ApartmentPage = () => {
   return (
@@ -24,6 +26,12 @@ const ApartmentPage = () => {
         </div>
       </SectionWrapper>
       <ApartmentBackgroundSection />
+      <SectionWrapper>
+        <div className="flex md:items-start md:flex-row flex-col pt-12 gap-14">
+          <ApartmentUpperFloorTable />
+          <ApartmentUpperFloorSketch />
+        </div>
+      </SectionWrapper>
     </>
   );
 };

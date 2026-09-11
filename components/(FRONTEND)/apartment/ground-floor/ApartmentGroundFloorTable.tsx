@@ -1,4 +1,4 @@
-import ApartmentTable from "./table/ApartmentTable";
+import ApartmentTable from "../table/ApartmentTable";
 
 const ApartmentGroundFloorTable = () => {
   const rooms = [
