@@ -35,7 +35,7 @@ const ApartmentGroundFloorTable = () => {
   ];
 
   return (
-    <div className="bg-background-secondary p-6 border border-muted">
+    <div className="bg-background-secondary p-6 border border-muted flex-1/2">
       <h2>Wykaz pomieszczeń - Parter</h2>
       <ApartmentTable rooms={rooms} />
     </div>

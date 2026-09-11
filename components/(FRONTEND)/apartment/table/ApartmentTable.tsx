@@ -22,9 +22,7 @@ const ApartmentTable = ({ rooms }: Props) => {
           {rooms.map((room) => (
             <tr key={room.nr} className=" nth-[2n]:bg-background">
               <td className="p-3">{room.nr}</td>
-
               <td className="p-3">{room.name}</td>
-
               <td className="p-3 text-center md:text-right">{room.area}</td>
             </tr>
           ))}
