@@ -38,7 +38,7 @@ const FeaturesArray: Feature[] = [
 const Features = () => {
   return (
     <div className="bg-background py-12">
-      <SectionWrapper className=" grid grid-cols-2 gap-12 md:grid-cols-4">
+      <SectionWrapper className="mx-auto grid max-w-7xl grid-cols-2 gap-12 py-6 md:grid-cols-4">
         {FeaturesArray.map((feature) => {
           const Icon = feature.icon;
           return (
